@@ -1,0 +1,140 @@
+\documentclass{resumed}
+\usepackage{tabularx}
+\usepackage{paracol}
+
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{450808}
+\definecolor{PastelRed}{HTML}{8F0D0D}
+\definecolor{GoldenEarth}{HTML}{E7D192}
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+
+\begin{document}
+
+\name{Name}{Surname}
+\contact{\faAt name.surname@qmail.com}{\faPhone +03 141592653}
+
+\columnratio{0.6}
+
+\section{Experience}
+
+\cvevent{Job Title}
+{Short job description}
+{Jan 2020 - Jan 2021}
+{Company name}
+
+\CAR{
+    Description of the overarching challenges of the position. Include here information about the used technologies.
+}{
+    Description of personal achievements. Include here prominent technical and leadership highlights.
+}{
+    Description of the results. What were the results? How they are correlated with what you have done?
+}
+\cvtag{C}
+\cvtag{C++}
+\cvtag{Scala}
+\cvtag{Haskell}
+\cvtag{Linux}
+\cvtag{Bash}
+
+
+\divider
+
+\cvevent{Job Title}
+{Short job description}
+{Jan 2019 - Jan 2020}
+{Company name}
+\CAR{
+    Description of the overarching challenges of the position. Include here information about the used technologies.
+}{
+    Description of personal achievements. Include here prominent technical and leadership highlights.
+}{
+    Description of the results. What were the results? How they are correlated with what you have done?
+}
+\cvtag{Scala}
+\cvtag{Haskell}
+\cvtag{Linux}
+
+\divider
+
+\cvevent{Job Title}
+{Short job description}
+{Jan 2018 - Jan 2019}
+{Company name}
+\CAR{
+    Description of the overarching challenges of the position. Include here information about the used technologies.
+}{
+    Description of personal achievements. Include here prominent technical and leadership highlights.
+}{
+    Description of the results. What were the results? How they are correlated with what you have done?
+}
+\cvtag{C}
+\cvtag{C++}
+\cvtag{Clojure}
+
+
+\section{Education}
+
+\cvevent{University}
+{Short degree description}
+{Jan 2019 - Jan 2020}
+{University name}
+Thesis argument
+
+\divider
+
+\cvevent{High School}
+{Short degree description}
+{Jan 2019 - Jan 2020}
+{School name}
+Thesis argument
+
+
+
+\section{Other skills}
+
+\begin{paracol}{2}
+
+\cvtag{C}
+\cvtag{C++}
+\cvtag{Scala}
+\cvtag{Haskell}
+\cvtag{Linux}
+\cvtag{Bash}
+\cvtag{Clojure}
+
+\divider
+
+\cvtag{TDD}
+\cvtag{SCRUM}
+\cvtag{LESS}
+
+\divider
+
+\begin{tabularx}{\columnwidth}{X X}
+    \cvachievement{\faCheck}{Driving patents}{B, A2} &
+    \cvachievement{\faCheck}{Special patents}{Testing patents}
+\end{tabularx}
+
+\switchcolumn
+\cvskill{English}{5}
+\cvskill{Italian}{5}
+\cvskill{Spanish}{4}
+\cvskill{Russian}{3}
+\cvskill{German}{1}
+
+
+
+\end{paracol}
+
+\end{document} 
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
