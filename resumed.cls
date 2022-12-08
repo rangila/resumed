@@ -17,14 +17,20 @@
 \RequirePackage{xcolor}
 \RequirePackage{etoolbox}
 
-\colorlet{accent}{blue!70!black}
-\colorlet{emphasis}{black}
-\colorlet{heading}{black}
-\colorlet{headingrule}{black}
-\colorlet{subheading}{emphasis}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{450808}
+\definecolor{PastelRed}{HTML}{8F0D0D}
+\definecolor{GoldenEarth}{HTML}{E7D192}
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
 \colorlet{body}{black!80!white}
-\colorlet{name}{heading}
-\colorlet{tagline}{accent}
+
 \newcommand{\itemmarker}{{\small\textbullet}}
 \newcommand{\ratingmarker}{\faCircle}
 
@@ -48,7 +54,7 @@
 \geometry{
   a4paper,
   %total={210mm,257mm},
-  total={180mm,257mm},
+  total={160mm,257mm},
   left=20mm,
   top=20mm,
   columnsep=1.2cm
@@ -61,7 +67,7 @@
 {
   \hspace{-5em}% Move into margin
   \tikz[overlay]
-  \shade[left color=blue!40, right color=white] (0,-1ex) rectangle (\dimexpr\textwidth/2 + 5em \relax,1em);
+  \shade[left color=GoldenEarth!100, right color=white] (0,-1ex) rectangle (\dimexpr\textwidth/2 + 5em \relax,1em);
   \makebox[3em][l]{}#1
 }
 
