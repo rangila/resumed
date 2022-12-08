@@ -1,25 +1,19 @@
+\pdfoptionpdfminorversion=5
 \documentclass{resumed}
 \usepackage{tabularx}
 \usepackage{paracol}
-
-\definecolor{SlateGrey}{HTML}{2E2E2E}
-\definecolor{LightGrey}{HTML}{666666}
-\definecolor{DarkPastelRed}{HTML}{450808}
-\definecolor{PastelRed}{HTML}{8F0D0D}
-\definecolor{GoldenEarth}{HTML}{E7D192}
-\colorlet{name}{black}
-\colorlet{tagline}{PastelRed}
-\colorlet{heading}{DarkPastelRed}
-\colorlet{headingrule}{GoldenEarth}
-\colorlet{subheading}{PastelRed}
-\colorlet{accent}{PastelRed}
-\colorlet{emphasis}{SlateGrey}
+\usepackage{abstract}
 
 \begin{document}
 
 \name{Name}{Surname}
 \contact{\faAt name.surname@qmail.com}{\faPhone +03 141592653}
 
+\renewcommand{\abstractname}{About me}    % clear the title
+\renewcommand{\absnamepos}{empty} % originally center
+\begin{abstract}
+Briefly about our drivers
+\end{abstract}
 \columnratio{0.6}
 
 \section{Experience}
